@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+
+.booking-header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.booking-header h1 {
+    margin-bottom: 8px;
+}
+
+.booking-header p {
+    color: #ddd;
+}
+
+.booking-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.event-details,
+.ticket-selection-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-details h2 {
+    margin-bottom: 15px;
+}
+
+.event-details p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.ticket-selection-card h2 {
+    margin-bottom: 25px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.quantity-control button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.quantity-control button:hover {
+    background: #444;
+}
+
+#ticketQuantity {
+    min-width: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.availability-message {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.total-section strong {
+    font-size: 22px;
+}
+
+.selection-error {
+    color: #d93025;
+    text-align: center;
+    min-height: 20px;
+    margin-bottom: 15px;
+}
+
+.continue-button,
+.back-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.continue-button {
+    border: none;
+    background: #222;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.continue-button:hover {
+    background: #444;
+}
+
+.back-button {
+    border: 1px solid #aaa;
+    background: white;
+    color: #222;
+}
+
+.back-button:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 500px) {
+    .booking-container {
+        padding: 0 15px;
+    }
+
+    .event-details,
+    .ticket-selection-card {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+
+.events-header {
+    background: #222;
+    color: white;
+    padding: 30px 20px;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.events-header h1 {
+    margin-bottom: 8px;
+}
+
+.events-header p {
+    color: #ddd;
+}
+
+.events-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.search-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-section input,
+.search-section select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    font-size: 15px;
+}
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.event-info {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.event-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.availability {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.available {
+    background: #e7f6e7;
+    color: #247524;
+}
+
+.limited {
+    background: #fff2d8;
+    color: #9a6500;
+}
+
+.select-ticket-button {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.select-ticket-button:hover {
+    background: #444;
+}
+
+.no-events {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+
+@media (max-width: 800px) {
+    .event-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .event-list {
+        grid-template-columns: 1fr;
+    }
+}
