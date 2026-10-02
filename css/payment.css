@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+
+/* Header */
+
+.payment-header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Main Container */
+
+.payment-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+/* Cards */
+
+.booking-summary,
+.payment-section {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Headings */
+
+.booking-summary h2,
+.payment-section h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Booking Information */
+
+.booking-info {
+    line-height: 1.8;
+}
+
+
+/* Form */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* Card Fields */
+
+.card-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* Payment Method Sections */
+
+.payment-method-details {
+    display: none;
+}
+
+
+/* Error */
+
+.payment-error {
+    color: red;
+
+    margin-top: 10px;
+
+    min-height: 20px;
+}
+
+
+/* Total */
+
+.payment-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+
+
+/* Pay Button */
+
+#payButton {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    background-color: #222;
+
+    color: white;
+}
+
+
+/* Back Button */
+
+.back-button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    background-color: #ddd;
+
+    color: #333;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .payment-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-row {
+        grid-template-columns: 1fr;
+    }
+
+}
