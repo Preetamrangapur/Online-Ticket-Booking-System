@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Tickets</title>
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+
+    <header class="booking-header">
+        <h1>Select Tickets</h1>
+        <p>Choose the number of tickets you want to book</p>
+    </header>
+
+    <main class="booking-container">
+
+        <section id="eventDetails" class="event-details">
+            <!-- Selected event details will appear here -->
+        </section>
+
+        <section class="ticket-selection-card">
+
+            <h2>Ticket Quantity</h2>
+
+            <div class="quantity-control">
+                <button type="button" id="decreaseButton">−</button>
+
+                <span id="ticketQuantity">1</span>
+
+                <button type="button" id="increaseButton">+</button>
+            </div>
+
+            <p id="availabilityMessage" class="availability-message"></p>
+
+            <div class="total-section">
+                <span>Total Amount</span>
+                <strong id="totalAmount">₹0</strong>
+            </div>
+
+            <p id="selectionError" class="selection-error"></p>
+
+            <button
+                type="button"
+                id="continueButton"
+                class="continue-button"
+            >
+                Continue
+            </button>
+
+            <button
+                type="button"
+                id="backButton"
+                class="back-button"
+            >
+                Back to Events
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="../js/booking.js"></script>
+</body>
+</html>
